@@ -7,3 +7,5 @@ function recursiveFactorial(n){
 
 console.log(recursiveFactorial(4));
 console.log(recursiveFactorial(5));
+
+//Big O - O(n)
