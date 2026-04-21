@@ -15,3 +15,7 @@ console.log(obj)
 
 delete obj.hobby; //deleting property from object
 console.log(obj);
+
+console.log(Object.keys(obj)); //returns an Array of Keys
+console.log(Object.values(obj)); //returns an Array of Values
+console.log(Object.entries(obj)); //returns an array of Key and Values
