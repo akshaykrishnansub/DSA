@@ -70,3 +70,4 @@ console.log(queue.isFull());
 queue.print();
 console.log(queue.dequeue());
 queue.print();
+console.log(queue.isFull());
