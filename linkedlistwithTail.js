@@ -79,3 +79,5 @@ console.log("List is empty?",list.isEmpty());
 list.prepend(10);
 list.append(20);
 console.log(list);
+
+export default LinkedList;
