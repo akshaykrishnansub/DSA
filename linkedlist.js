@@ -109,6 +109,36 @@ class LinkedList{
         }
     }
 
+    //Linked List search
+    search(value){
+        if(this.isEmpty()){
+            return -1;
+        }
+        let i=0;
+        let curr=this.head;
+        while(curr){
+            if(curr.value===value){
+                return i;
+            }
+            curr=curr.next;
+            i++;
+        }
+        return -1;
+    }
+
+    //reverse a linked list (Important)
+    reverse(){
+        let prev=null;
+        let curr=this.head;
+        while(curr){
+            let next=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+        }
+        this.head=prev;
+    }
+
     //printing the elements in the linked list
     print(){
         if(this.isEmpty()){
@@ -141,4 +171,7 @@ list.print();
 list.removeFrom(1);
 list.print();
 list.removeValue(30);
+list.print();
+console.log(list.search(50));
+list.reverse();
 list.print();
