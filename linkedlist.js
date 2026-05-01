@@ -58,10 +58,10 @@ class LinkedList{
             let prev=this.head; //previous currently points to head
             for(let i=0;i<index-1;i++){
                 prev=prev.next;
-                newNode.next=prev.next;
-                prev.next=newNode;
-                this.size++;
             }
+            newNode.next=prev.next;
+            prev.next=newNode;
+            this.size++;
         }
     }
 
